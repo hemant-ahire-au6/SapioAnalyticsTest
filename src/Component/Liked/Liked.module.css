@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 2rem;
+    width: 90%;
+}
+
+@media (max-width:500px){
+    .container{
+      justify-content: center;
+    }
+}
