@@ -68,7 +68,7 @@ function HomeSection() {
             );
           })}
         </div>
-      ) : (
+      ) : value === "" ? null : (
         <div>
           <h1>No result found for "{value}"</h1>
         </div>
