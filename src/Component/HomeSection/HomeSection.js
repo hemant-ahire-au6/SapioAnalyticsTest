@@ -48,11 +48,13 @@ function HomeSection() {
         {/* <button className={style.searchButton}>Search</button> */}
       </div>
 
+      {console.log(character.length, "SSSSSSSSSSSS")}
+
       {loading ? (
         <div className={style.container1}>
           <CircularProgress size={100} />
         </div>
-      ) : character.length > 1 ? (
+      ) : character.length >= 1 ? (
         <div className={style.container}>
           {character.map((data) => {
             return (
